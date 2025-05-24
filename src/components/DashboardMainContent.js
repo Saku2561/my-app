@@ -5,8 +5,9 @@ import AnatomySection from './AnatomySection.js';
 import ActivityFeed from './activityFeed.js';
 import Sidebar from './Sidebar';
 import './styles/dashboardContaint.css';
-
+import { FaSearch, FaBell } from 'react-icons/fa';
 import { Box, Paper, Grid, Stack } from '@mui/material';
+import Header from './Header.js';
 
 const DashboardMainContent = () => {
   return (
@@ -22,12 +23,22 @@ const DashboardMainContent = () => {
           <Grid container spacing={1}>
             {/* Sidebar - Full height on left */}
             <Grid item xs={12} md={2}>
+              <Header />
               <Sidebar />
             </Grid>
 
         
         {/* Middle Section: Anatomy + Health Cards (side by side), then Activity below */}
 <Grid item xs={12} md={6}>
+   <div className="search-container">
+        <FaSearch className="search-icon" />
+        <input type="text" placeholder="Search" className="search-input" />
+        <div className="notification-icon">
+          <FaBell />
+        </div>
+      </div>
+
+      <h3>Dashboard</h3>
   <Stack spacing={3}>
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
