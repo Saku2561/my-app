@@ -1,0 +1,38 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6f9ff;
+  color: #1e1e2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* === App (Root Layout) === */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+  .anatomy-section {
+    flex-direction: column;
+  }
+}

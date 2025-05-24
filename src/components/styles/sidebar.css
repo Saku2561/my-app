@@ -1,0 +1,63 @@
+
+/* === Sidebar Component === */
+.sidebar {
+  width: 220px;
+  background-color: #f9fbfd;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #666;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #9da6b1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu li svg {
+  margin-right: 10px;
+}
+
+.menu li:hover:not(.disabled) {
+  color: #007bff;
+}
+
+.menu li.active {
+  color: #212a3d;
+  font-weight: bold;
+}
+
+.menu li.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tools-section {
+  margin-top: 30px;
+}
+
+.tools-label {
+  font-size: 13px;
+  color: #b0b8c1;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bottom-settings {
+  margin-top: auto;
+}

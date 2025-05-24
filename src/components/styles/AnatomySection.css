@@ -1,0 +1,40 @@
+.anatomy-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f0f4f8;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+}
+
+.anatomy-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.label {
+  position: absolute;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.heart {
+  top: 20%;
+  right: -60px;
+  background-color: #4e3dfc;
+}
+
+.leg {
+  top: 65%;
+  left: -80px;
+  background-color: #00c4ff;
+}

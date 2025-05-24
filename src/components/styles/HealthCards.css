@@ -1,0 +1,80 @@
+.health-status-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  width: 250px;
+}
+
+.health-card {
+  background-color: #f9fafe;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emoji {
+  font-size: 24px;
+}
+
+.card-header h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #8a8a8a;
+  margin: 0;
+}
+
+.progress-bar {
+  background-color: #e0e6ed;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.card-footer {
+  text-align: right;
+  font-size: 14px;
+}
+
+.card-footer a {
+  color: #5b6ef7;
+  text-decoration: none;
+  font-weight: 500;
+}
+.link-style-button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-right: 0.25em; /* space between arrow and text */
+  font-weight: bold;
+  /* You can adjust arrow size and color here */
+}

@@ -1,0 +1,62 @@
+
+/* === UpcomingSchedule === */
+.upcoming-schedule {
+  background-color: #f5f8ff;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.schedule-heading {
+  font-size: 1.75rem;
+  color: #2c2c54;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.day-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.day-heading {
+  font-size: 1rem;
+  color: #888;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.appointment-card {
+  background-color: #eaefff;
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  flex: 1 1 40%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.appointment-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.emoji {
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  font-size: 1.2rem;
+}
+
+.appointment-time {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
