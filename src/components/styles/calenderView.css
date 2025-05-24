@@ -1,8 +1,10 @@
 .calendar-view {
   font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f8ff;
   padding: 20px;
-  max-width: 900px;
+  max-width: 500px;
   margin: auto;
+   border-radius: 12px;
 }
 
 .header {

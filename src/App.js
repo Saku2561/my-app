@@ -1,16 +1,16 @@
-import React from 'react';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import DashboardMainContent from './components/DashboardMainContent';
-import './App.css'; // Add styling as required
+import React from "react";
+import Dashboard from "./components/DashboardMainContent";
 
 function App() {
   return (
-    <div className="app-container">
-      <Header />
-      <div className="main-layout">
-        <Sidebar />
-        <DashboardMainContent />
+    <div className="flex h-screen">
+    
+<Dashboard />
+      {/* Main content */}
+      <div className="flex-1 p-6 bg-gray-50 overflow-auto">
+        <div className="grid grid-cols-3 gap-6">
+        </div>
+
       </div>
     </div>
   );

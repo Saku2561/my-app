@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/calenderView.css';
-
+import SimpleAppointmentCard from './simpleAppointmentCard';
+import './styles/UpcomingSchedule.css';
 const days = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
 const dates = ['25', '26', '27', '28', '29', '30', '31'];
 
@@ -48,6 +49,22 @@ const CalendarView = () => {
           <p>Dr. Kevin Djones</p>
         </div>
       </div>
+       <div className="upcoming-schedule">
+      <h3 className="schedule-heading">The Upcoming Schedule</h3>
+      <div className="day-schedule">
+        <h4 className="day-heading">On Thursday</h4>
+        <div className="card-row">
+          <SimpleAppointmentCard title="Health checkup complete" emoji="💉" time="11:00 AM" />
+          <SimpleAppointmentCard title="Ophthalmologist" emoji="👁️" time="14:00 PM" />
+        </div>
+
+        <h4 className="day-heading">On Saturday</h4>
+        <div className="card-row">
+          <SimpleAppointmentCard title="Cardiologist" emoji="❤️" time="12:00 AM" />
+          <SimpleAppointmentCard title="Neurologist" emoji="🧠" time="16:00 PM" />
+        </div>
+      </div>
+    </div>
     </div>
   );
 };
